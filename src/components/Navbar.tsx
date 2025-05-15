@@ -19,7 +19,12 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-8 font-medium text-gray-700">
           {NAV.map((item) => (
             <li key={item.label}>
-              <a href={item.href} className="hover:text-accent transition-colors">{item.label}</a>
+              <a
+                href={item.href}
+                className="nav-underline transition-colors"
+              >
+                {item.label}
+              </a>
             </li>
           ))}
         </ul>
@@ -46,7 +51,7 @@ const Navbar = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                className="block px-4 py-2 hover:text-accent transition-colors"
+                className="block px-4 py-2 nav-underline transition-colors"
                 onClick={() => setOpen(false)}
               >
                 {item.label}

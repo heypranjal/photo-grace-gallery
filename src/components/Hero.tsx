@@ -10,7 +10,7 @@ const Hero = () => (
       </p>
       <a
         href="#gallery"
-        className="inline-block px-8 py-3 rounded-md bg-accent text-white font-semibold hover:bg-accent/90 shadow-lg transition animate-scale-in"
+        className="cta-btn inline-block px-8 py-3 rounded-md bg-accent text-white font-semibold shadow-lg transition animate-scale-in transform hover:scale-105"
         tabIndex={0}
       >
         Get Started
@@ -20,19 +20,19 @@ const Hero = () => (
       {/* Floating photos for visual interest, hidden on xs */}
       <div className="relative w-64 h-52 md:w-80 md:h-64">
         <img
-          className="absolute top-0 left-12 w-32 h-32 rounded-xl object-cover shadow-lg border-4 border-white z-20"
+          className="morph-img absolute top-0 left-12 w-32 h-32 rounded-xl object-cover shadow-lg border-4 border-white z-20 transition-transform transition-all duration-500 hover:scale-110"
           src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=400&q=80"
           alt="Gallery preview 1"
           loading="lazy"
         />
         <img
-          className="absolute bottom-0 left-0 w-32 h-36 rounded-xl object-cover shadow-md border-4 border-white z-10"
+          className="morph-img absolute bottom-0 left-0 w-32 h-36 rounded-xl object-cover shadow-md border-4 border-white z-10 transition-transform transition-all duration-500 hover:scale-105"
           src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=400&q=80"
           alt="Gallery preview 2"
           loading="lazy"
         />
         <img
-          className="absolute bottom-8 right-2 w-28 h-28 rounded-xl object-cover shadow-md border-4 border-white z-20"
+          className="morph-img absolute bottom-8 right-2 w-28 h-28 rounded-xl object-cover shadow-md border-4 border-white z-20 transition-transform transition-all duration-500 hover:scale-110"
           src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80"
           alt="Gallery preview 3"
           loading="lazy"

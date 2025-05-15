@@ -6,7 +6,7 @@ const CTASection = () => (
     </h3>
     <a
       href="#home"
-      className="mt-2 px-8 py-3 rounded-md bg-accent text-white font-semibold hover:bg-accent/90 shadow-lg transition animate-scale-in"
+      className="cta-btn mt-2 px-8 py-3 rounded-md bg-accent text-white font-semibold shadow-lg transition animate-scale-in hover:scale-105"
       tabIndex={0}
     >
       Get Started
