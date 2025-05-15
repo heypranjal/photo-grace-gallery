@@ -8,15 +8,17 @@ const GalleryPreview = () => (
       {galleryImages.map((img) => (
         <figure
           key={img.id}
-          className="rounded-2xl overflow-hidden shadow-md bg-white flex flex-col animate-fade-in transform-gpu hover:scale-[1.03] group transition-all duration-400"
+          className="rounded-2xl overflow-hidden shadow-md bg-white flex flex-col min-h-[340px] h-full animate-fade-in transform-gpu group transition-all duration-400 hover:scale-[1.04] hover:shadow-xl"
         >
           <img
             src={img.src}
             alt={img.alt}
             className="gallery-morph-img w-full h-52 object-cover group-hover:liquid-morph transition-all duration-400"
             loading="lazy"
+            draggable={false}
+            style={{ userSelect: "none" }}
           />
-          <figcaption className="p-4 text-center text-gray-700 text-md border-t border-gray-100 bg-white">
+          <figcaption className="flex-1 p-4 flex items-center justify-center text-center text-gray-700 text-md border-t border-gray-100 bg-white">
             {img.description}
           </figcaption>
         </figure>

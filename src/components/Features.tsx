@@ -25,10 +25,15 @@ const Features = () => (
       {FEATURES.map(({ icon: Icon, title, text }) => (
         <div
           key={title}
-          className="flex flex-col items-center text-center bg-white rounded-2xl shadow-md px-8 py-8 max-w-xs animate-fade-in hover:shadow-lg transition-shadow"
+          className="flex flex-col items-center text-center bg-white rounded-2xl shadow-md px-8 py-8 max-w-xs w-full min-h-[320px] transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in group"
+          style={{
+            boxSizing: "border-box",
+            // minHeight ensures same-height cards
+          }}
         >
-          <div className="w-14 h-14 rounded-full flex items-center justify-center bg-accent/10 mb-4">
-            <Icon className="w-7 h-7 text-accent" aria-hidden="true" />
+          {/* Example avatar/profile style icon background */}
+          <div className="w-16 h-16 rounded-full flex items-center justify-center bg-accent/20 mb-4 border-2 border-accent shadow-sm group-hover:scale-110 transition-transform">
+            <Icon className="w-8 h-8 text-accent" aria-hidden="true" />
           </div>
           <h3 className="font-bold text-xl text-gray-900 mb-2">{title}</h3>
           <p className="text-gray-600 text-md">{text}</p>
